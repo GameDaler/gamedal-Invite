@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    word-spacing: 0;
+    font-family: 'Lucida Console', Monaco, monospace;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .header h1 {
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .header p {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+.photo-section, .separator {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .photo-section .main-photo, .separator .separator-image {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+.details-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .details-section h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .details-section .invitation-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+.date-time, .wedding-location, .location, .contacts {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    .date-time h2, .wedding-location h2, .location h2, .contacts h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .date-time p, .wedding-location p, .location p, .contacts p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 4px;
+    }
+
+.map-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .map-button:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+/* Увеличение размеров для экранов шире 768px */
+@media (min-width: 768px) {
+    .container {
+        max-width: 700px;
+        padding: 30px;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+    .header p {
+        font-size: 24px;
+    }
+
+    .details-section h2, .date-time h2, .wedding-location h2, .location h2, .contacts h2 {
+        font-size: 28px;
+    }
+
+    .details-section .invitation-text, .date-time p, .wedding-location p, .location p, .contacts p {
+        font-size: 18px;
+    }
+
+    .map-button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+/* Ещё большее увеличение для экранов шире 1200px */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+        padding: 40px;
+    }
+
+    .header h1 {
+        font-size: 48px;
+    }
+
+    .header p {
+        font-size: 28px;
+    }
+
+    .details-section h2, .date-time h2, .wedding-location h2, .location h2, .contacts h2 {
+        font-size: 32px;
+    }
+
+    .details-section .invitation-text, .date-time p, .wedding-location p, .location p, .contacts p {
+        font-size: 20px;
+    }
+
+    .map-button {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+}
+
